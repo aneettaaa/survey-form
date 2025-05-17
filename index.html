@@ -1,44 +1,55 @@
- </form> */
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<style>
-    body{
-        background-image: url(360_F_28783272_McJzgAYLurO4wEnWAfwDDq9a9RpXRofe.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-       } 
-       div{width: 500px;
-        height: 400px;
-        background-color: aliceblue;
-        margin-top: 100px;
 
-       }
-    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-image: url(pexels-photo-1324803.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    div {
+        width: 700px;
+        height: 500px;
+        background-color: aliceblue;
+        margin-top: 50px;
+
+    }
+</style>
+
 <body>
     <center>
-        <h3>SURVEY FORM</h3>
+        
+            <h1  style="color: rgb(223, 220, 217);">SURVEY FORM</h1>
         <div>
-            <h5>let us know how we can improve</h5>
+            <h3>let us know how we can improve</h3>
+
             <table>
                 <tr>
-                    <td align="end"><label for="">name:</label></td>
-                    <td><input type="text"></td>
+                    <td align="end"><label for="name">*Name:</label></td>
+                    <td><input type="text" id="name" name="name" required placeholder="Enter the namr"></td>
                 </tr>
                 <tr>
-                    <td align="end"><label for="">email:</label></td>
-                    <td><input type="text"></td>
+                    <td align="end"><label>*Email</label></td>
+                    <td><input type="email" required placeholder="Enter your email"><br></td>
                 </tr>
                 <tr>
-                    <td align="end"><label for="">age:</label></td>
-                    <td><input type="text"></td>
+                    <td align="end"> <label for="">*Age</label></td>
+                    <td><input type="number" placeholder="Age"><br></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="file"></td>
+                    <td> <input type="file"> <br></td>
                 </tr>
+
                 <tr>
-                    <td align="end"><label>Which option best describe your role?</label></td>
+                    <td align="end"><label >Which option best describe your role?</label></td>
 
                     <td><select name="" id="">
 
@@ -47,28 +58,64 @@
                             <option value="dfg" >working</option>
                             <option value="selected disabled" >--Select an option--</option>
                         </select></td>
-                </tr>
-                    <td><label for="">how ikely is that would recommendthis program to a friend</label></td>
-                    <td>
-                        <input type="radio">definitly<br>
-                        <input type="radio">maybe<br>
-                        <input type="radio">notsure<br>
-                
-                    <td align="end">label>what do you like most here</label></td>
-                    <td>select an option="" id="">
+                </tr>
 
 
+                <tr>
+                    <td align="end"><label >*How likely is that you would recommented this program to a friend?</label></td>
+
+                    <td><input type="radio" name="likely" value="definitly">
+                        <label for="">Definitely</label><br>
+                        <input type="radio" name="likely" value="maybe">
+                        <label for="">Maybe</label><br>
+                        <input type="radio" name="likely" value="not sure">
+                        <label for="">Not sure</label><br>
                     </td>
                 </tr>
-            </table>
-        </div>
 
+ <tr>
+                    <td align="end"><label >What do you like most</label></td>
+
+                    <td><select name="" id="">
+
+
+                            <option value="nm" >class</option>
+                            <option value="jk" >group</option>
+                            <option value="selected an option" >--Select an option--</option>
+                        </select></td>
+                </tr>
+
+
+                <tr>
+                    <td align="end">
+                        <label >Thing that should be improved in the future check all that apply? </label>
+                    </td>
+                    <td> <input type="checkbox" name="op1" value="op1">
+                        <label for="ckbox">Frond-end project</label><br>
+                        <input type="checkbox" name="op2" value="op2">
+                        <label for="ckbox">Back-end project</label><br>
+                        <input type="checkbox" name="op3" value="op3">
+                        <label for="ckbox">Back-end project</label><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="end">
+                        <label >Any Comment or Suggestions?</label>
+                    </td>
+                    <td>
+                        <textarea cols="20" rows="5" placeholder="Enter your comment here..."></textarea>
+                    </td>
+                </tr>
+
+
+            </table>
+             <button type="submit">Submit</button><br><br>
+        </div>
     </center>
 
 
-    
+</body>
 
-
-
-</style>
 </html>
+
